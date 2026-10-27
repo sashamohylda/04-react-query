@@ -32,4 +32,4 @@ npm run dev
 ## Посилання
 
 - Репозиторій: https://github.com/sashamohylda/04-react-query
-- Робоча сторінка (Vercel): _додати після деплою_
+- Робоча сторінка (Vercel): https://04-react-query-movies.vercel.app/
