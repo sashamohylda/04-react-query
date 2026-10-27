@@ -1,4 +1,4 @@
-import axios, { type AxiosResponse } from 'axios';
+import axios from 'axios';
 import type { Movie } from '../types/movie';
 
 export interface FetchMoviesResponse {
@@ -14,7 +14,7 @@ export const fetchMovies = async (
   query: string,
   page: number,
 ): Promise<FetchMoviesResponse> => {
-  const response: AxiosResponse<FetchMoviesResponse> = await axios.get(
+  const response = await axios.get<FetchMoviesResponse>(
     `${BASE_URL}/search/movie`,
     {
       params: {
